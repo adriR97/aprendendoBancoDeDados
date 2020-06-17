@@ -32,6 +32,15 @@ INSERT INTO CLIENTE VALUES
 /*Ver todos os registros*/
 SELECT * FROM CLIENTE;
 
+/*Selecionando por colunas e mostrando data-hora atual*/
+SELECT NOME AS CLIENTE, EMAIL, SEXO, NOW() AS DATA_HORA FROM CLIENTE;
+
+/*Utilizando where*/
+SELECT NOME FROM CLIENTE WHERE SEXO='F';
+
+/*Utilizando like*/
+SELECT NOME FROM CLIENTE WHERE NOME LIKE '%US%';
+
 
 
 

@@ -41,6 +41,12 @@ SELECT livro, valor_livro FROM livros WHERE uf='SP';
 /*Dados de autores do sexo masculino que tiveram livros publicados em SP ou RJ*/
 SELECT autor, sexo, uf FROM livros WHERE sexo='M' and (uf='SP' or uf='RJ');
 
+/*Contando os registros da tabela*/
+SELECT COUNT(*) as 'Quantidade de registros' FROM livros;
+
+/*Contando os registros por grupo*/
+SELECT sexo, COUNT(*) FROM livros GROUP BY sexo;
+
 
 
 
